@@ -69,10 +69,12 @@ export const CameraDashboard = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
-                <DropdownMenuItem onClick={() => setActiveView("feed")}>
-                  <Video className="h-4 w-4 mr-2" />
-                  Live Feed
-                </DropdownMenuItem>
+                <DropdownMenuItem
+                   onClick={() => window.open("https://sanit-tract-backend.vercel.app/", "_blank")}>
+                    <Video className="h-4 w-4 mr-2" />
+                    Live Feed
+                    </DropdownMenuItem>
+
                 <DropdownMenuItem onClick={() => setActiveView("logs")}>
                   <History className="h-4 w-4 mr-2" />
                   Sanitization Logs
